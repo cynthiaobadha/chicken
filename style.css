@@ -1,0 +1,99 @@
+* {
+    box-sizing: border-box;
+
+}
+h1{
+    top: 0;
+}
+body{
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    justify-content: center;
+}
+.panel{
+    height: 80vh;
+    margin: 10px;
+    border-radius: 40px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    flex: 0.5;
+    color: #fff;
+    position:relative;
+    cursor: pointer;
+    transition: all 1000ms ease-in;
+}
+
+.panel.active h2{
+    opacity: 1;
+    transition: opacity 1s ease-in 1.2s;
+}
+.panel.active{
+    flex: 5;
+}
+.panel h2 {
+    position:absolute;
+    bottom: 20px;
+    left: 15px;
+    opacity: 0;
+
+}
+
+.container {
+    display:flex;
+    width:90vw;
+}
+.overlay {
+    position: absolute; 
+    bottom: 0; 
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5); /* Black see-through */
+    color: #f1f1f1; 
+    width: 100%;
+    transition: .5s ease;
+    opacity:0;
+    color: white;
+    font-size: 30px;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .container:hover .overlay {
+    opacity: 1;
+  }
+
+#image-1{
+
+    background-image: url('./images/chickeeen.jpg');
+}
+#image-2{
+    background-image: url('./images/chicken\ parts.jpg');
+}
+#image-3{
+background-image: url('./images/skinless\ chicken\ breast\ -\ Copy.jpeg');
+}
+#image-4{
+background-image: url('./images/thighs.jpg');
+}
+#image-5{
+background-image: url('./images/OIP\ -\ Copy.jpg');
+}
+#image-6{
+    background-image: url('./images/chicken-drumsticks--500x500.jpg');
+ }
+#image-7{
+    background-image: url('./images/gizard.jpg');
+    }
+ #image-8{
+        background-image: url('./images/marinate-a-whole-chicken.jpg');
+        }
+ #image-9{
+            background-image: url('./images/kienyeji\ eggs.jpg');
+  }
+  #image-10{
+    background-image: url('./images/realkienyeji.jpg');
+}
+
+
+
